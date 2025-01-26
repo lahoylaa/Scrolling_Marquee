@@ -38,7 +38,9 @@ entity top is
     DipSwitchLeft  : in  STD_LOGIC_VECTOR(3 downto 0);
     DipSwitchRight : in  STD_LOGIC_VECTOR(3 downto 0);
     Seg_out        : out std_logic_vector(6 downto 0);
-    Anode_out      : out STD_LOGIC_VECTOR(3 downto 0)
+    Anode_out      : out STD_LOGIC_VECTOR(3 downto 0);
+    Seg_out_2 : out STD_LOGIC_VECTOR(6 downto 0);
+    Anode_out_2 : out STD_LOGIC_VECTOR(3 downto 0)
   );
 end entity;
 
@@ -96,6 +98,15 @@ begin
       RightSeg   => segment_out_2,
       Anode_out  => Anode_out,
       Seg_out    => Seg_out
+    );
+
+    U2: entity work.multiplexer
+    port map(
+      Seg_select => counter,
+      LeftSeg => segment_out_1,
+      RightSeg => segment_out_2,
+      Anode_out => Anode_out_2,
+      Seg_out => Seg_out_2
     );
 
 end architecture;
