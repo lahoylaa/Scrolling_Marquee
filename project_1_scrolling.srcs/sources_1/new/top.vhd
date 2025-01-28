@@ -38,9 +38,9 @@ entity top is
     DipSwitchLeft  : in  STD_LOGIC_VECTOR(3 downto 0);
     DipSwitchRight : in  STD_LOGIC_VECTOR(3 downto 0);
     Seg_out        : out std_logic_vector(6 downto 0);
-    Anode_out      : out STD_LOGIC_VECTOR(3 downto 0);
-    Seg_out_2 : out STD_LOGIC_VECTOR(6 downto 0);
-    Anode_out_2 : out STD_LOGIC_VECTOR(3 downto 0)
+    Anode_out      : out STD_LOGIC_VECTOR(7 downto 0);
+    Seg_out_2 : out STD_LOGIC_VECTOR(6 downto 0)
+    --Anode_out_2 : out STD_LOGIC_VECTOR(3 downto 0)
   );
 end entity;
 
@@ -48,7 +48,7 @@ architecture Behavioral of top is
 
   signal clk_out     : std_logic;
   signal btn_out     : std_logic;
-  signal counter     : std_logic_vector(1 downto 0);
+  signal counter     : std_logic_vector(2 downto 0);
   signal segment_out_1 : std_logic_vector(6 downto 0);
   signal segment_out_2 : std_logic_vector(6 downto 0);
 
@@ -97,16 +97,17 @@ begin
       LeftSeg    => segment_out_1,
       RightSeg   => segment_out_2,
       Anode_out  => Anode_out,
-      Seg_out    => Seg_out
+      Seg_out    => Seg_out,
+      Seg_out_2 => Seg_out_2
     );
 
-    U2: entity work.multiplexer
-    port map(
-      Seg_select => counter,
-      LeftSeg => segment_out_1,
-      RightSeg => segment_out_2,
-      Anode_out => Anode_out_2,
-      Seg_out => Seg_out_2
-    );
+    --U2: entity work.multiplexer
+    --port map(
+    --  Seg_select => counter,
+    --  LeftSeg => segment_out_1,
+    --  RightSeg => segment_out_2,
+    --  Anode_out => Anode_out_2,
+    --  Seg_out => Seg_out_2
+    --);
 
 end architecture;
