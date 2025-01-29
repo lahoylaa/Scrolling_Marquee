@@ -36,12 +36,12 @@ entity scroll_pos_decoder is
 Port(
     slow_clk : in STD_LOGIC;
     rst_btnC : in STD_LOGIC;
-    scroll_pos : out INTEGER range 0 to 15
+    scroll_pos : out INTEGER range 0 to 23
 );
 end scroll_pos_decoder;
 
 architecture Behavioral of scroll_pos_decoder is
- signal scroll_pos_counter : integer range 0 to 15 := 0;
+ signal scroll_pos_counter : integer range 0 to 23 := 0;
 
 begin
   -- Update Scroll Position
@@ -50,7 +50,7 @@ begin
     if rst_btnC = '1' then
       scroll_pos_counter <= 0;
     elsif rising_edge(slow_clk) then
-      scroll_pos_counter <= (scroll_pos_counter + 1) mod 16; -- Scroll through 16 characters
+      scroll_pos_counter <= (scroll_pos_counter + 1) mod 24; -- Scroll through 16 characters
     end if;
   end process;
 

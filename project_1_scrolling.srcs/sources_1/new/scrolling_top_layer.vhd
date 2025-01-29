@@ -47,6 +47,7 @@ signal slow_clk_signal : std_logic;
 signal counter : std_logic_vector(2 downto 0);
 signal active_digit_signal : INTEGER range 0 to 7; 
 signal scroll_pos_signal : INTEGER range 0 to 15; 
+signal delay_active_signal : std_logic;
 
 begin
 
@@ -85,10 +86,13 @@ port map(
     scroll_pos => scroll_pos_signal
 );
 
+
 M1 : entity work.seven_seg_mux
 port map(
+    clk_100MHz => clk_100MHz,
     active_digit => active_digit_signal,
     scroll_pos => scroll_pos_signal,
+    --delay_active => delay_active_signal,
     seg_an => seg_an,
     seg_data => seg_data
 );
