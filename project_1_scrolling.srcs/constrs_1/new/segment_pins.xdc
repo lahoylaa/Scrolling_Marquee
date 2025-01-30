@@ -84,3 +84,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports {seg_an[7]}]
 # Mapping Button
 set_property PACKAGE_PIN J5 [get_ports rst_btnC]
 set_property IOSTANDARD LVCMOS33 [get_ports rst_btnC]
+
+set_property PACKAGE_PIN J2 [get_ports btnU]
+set_property IOSTANDARD LVCMOS33 [get_ports btnU]

@@ -1,59 +1,31 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 01/27/2025 09:38:40 PM
--- Design Name: 
--- Module Name: scroll_pos - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity scroll_pos_decoder is
---  Port ( );
-Port(
-    slow_clk : in STD_LOGIC;
-    rst_btnC : in STD_LOGIC;
-    scroll_pos : out INTEGER range 0 to 23
-);
+  Port(
+    slow_clk    : in  STD_LOGIC; -- Slowed-down clock for smooth scrolling
+    rst_btnC    : in  STD_LOGIC; -- Reset button (resets scroll position)
+    btnU : in  STD_LOGIC; -- Button to pause scrolling
+    scroll_pos  : out INTEGER range 0 to 23 -- Scrolling position output
+  );
 end scroll_pos_decoder;
 
 architecture Behavioral of scroll_pos_decoder is
- signal scroll_pos_counter : integer range 0 to 23 := 0;
+  signal scroll_pos_counter : integer range 0 to 23 := 0;
 
 begin
   -- Update Scroll Position
   process (slow_clk, rst_btnC)
   begin
     if rst_btnC = '1' then
-      scroll_pos_counter <= 0;
+      scroll_pos_counter <= 0; -- Reset to start position
     elsif rising_edge(slow_clk) then
-      scroll_pos_counter <= (scroll_pos_counter + 1) mod 24; -- Scroll through 16 characters
+      if btnU = '0' then  -- Only update when button is NOT held
+        scroll_pos_counter <= (scroll_pos_counter + 1) mod 24; 
+      end if;
     end if;
   end process;
 
-scroll_pos <= scroll_pos_counter;
+  scroll_pos <= scroll_pos_counter; -- Output the current scroll position
 
 end Behavioral;

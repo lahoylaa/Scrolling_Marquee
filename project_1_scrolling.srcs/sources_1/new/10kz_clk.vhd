@@ -31,16 +31,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity ten_khz_clk is
+entity clk_divide_500Hz is
 --  Port ( );
 Port(
     clk_100MHz : in STD_LOGIC;
     rst_btnC : in STD_LOGIC;
     fast_clkout : out STD_LOGIC
 );
-end ten_khz_clk;
+end clk_divide_500Hz;
 
-architecture Behavioral of ten_khz_clk is
+architecture Behavioral of clk_divide_500Hz is
 
 signal fast_clk_count : integer range 0 to 100_000 := 0;
 signal fast_clk : std_logic;

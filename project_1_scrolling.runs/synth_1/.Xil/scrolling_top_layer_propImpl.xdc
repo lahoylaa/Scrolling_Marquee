@@ -51,3 +51,5 @@ set_property src_info {type:XDC file:1 line:80 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN H3 [get_ports {seg_an[7]}]
 set_property src_info {type:XDC file:1 line:85 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN J5 [get_ports rst_btnC]
+set_property src_info {type:XDC file:1 line:88 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN J2 [get_ports btnU]

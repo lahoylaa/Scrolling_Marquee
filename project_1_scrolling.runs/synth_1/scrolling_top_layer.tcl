@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -89,6 +87,7 @@ OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/10kz_clk.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/active_digit.vhd
+  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/delay.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/half_second_clk.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scroll_pos.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/seven_seg_mux.vhd

@@ -116,7 +116,7 @@ begin
 
   -- Determine Active Group
   active_group <= '0' when active_digit < 4 else '1';
-
+ 
   -- Assign Segment Data
   process (active_digit, scroll_pos, digit_values)
   begin

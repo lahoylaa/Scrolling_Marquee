@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Wed Jan 29 10:50:39 2025
+| Date         : Thu Jan 30 10:21:46 2025
 | Host         : DESKTOP-88C58FM running 64-bit major release  (build 9200)
 | Command      : report_methodology -file scrolling_top_layer_methodology_drc_routed.rpt -pb scrolling_top_layer_methodology_drc_routed.pb -rpx scrolling_top_layer_methodology_drc_routed.rpx
 | Design       : scrolling_top_layer

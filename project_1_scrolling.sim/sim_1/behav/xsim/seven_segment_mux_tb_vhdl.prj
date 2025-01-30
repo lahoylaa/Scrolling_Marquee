@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1_scrolling.srcs/sim_1/new/seven_segment_mux_tb.vhd" \
+
+# Do not sort compile order
+nosort

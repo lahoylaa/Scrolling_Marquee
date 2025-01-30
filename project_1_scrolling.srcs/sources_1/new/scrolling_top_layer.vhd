@@ -36,6 +36,7 @@ entity scrolling_top_layer is
 Port(
     clk_100MHz : in STD_LOGIC;
     rst_btnC : in STD_LOGIC;
+    btnU : in STD_LOGIC; -- Button to hold display
     seg_an : out STD_LOGIC_VECTOR(7 downto 0);
     seg_data : out STD_LOGIC_VECTOR(15 downto 0)
 );
@@ -48,10 +49,11 @@ signal counter : std_logic_vector(2 downto 0);
 signal active_digit_signal : INTEGER range 0 to 7; 
 signal scroll_pos_signal : INTEGER range 0 to 15; 
 signal delay_active_signal : std_logic;
+signal full_off_signal : std_logic;
 
 begin
 
-fast_clock : entity work.ten_khz_clk
+fast_clock : entity work.clk_divide_500Hz
 port map(
     clk_100MHz => clk_100MHz,
     rst_btnC => rst_btnC,
@@ -83,13 +85,24 @@ S1 : entity work.scroll_pos_decoder
 port map(
     slow_clk => slow_clk_signal,
     rst_btnC => rst_btnC,
+    btnU => btnU,
     scroll_pos => scroll_pos_signal
 );
 
+D1: entity work.delay
+port map(
+    clk_100MHz => clk_100MHz,
+    scroll_pos => scroll_pos_signal,
+    active_digit => active_digit_signal,
+    delay_active => delay_active_signal,
+    full_off => full_off_signal
+);
 
 M1 : entity work.seven_seg_mux
 port map(
-    clk_100MHz => clk_100MHz,
+    --clk_100MHz => clk_100MHz,
+    delay_active => delay_active_signal,
+    full_off => full_off_signal,
     active_digit => active_digit_signal,
     scroll_pos => scroll_pos_signal,
     --delay_active => delay_active_signal,

@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Jan 29 10:48:59 2025
-# Process ID: 24268
+# Start of session at: Thu Jan 30 10:17:12 2025
+# Process ID: 57164
 # Current directory: E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.runs/synth_1
 # Command line: vivado.exe -log scrolling_top_layer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source scrolling_top_layer.tcl
 # Log file: E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.runs/synth_1/scrolling_top_layer.vds
