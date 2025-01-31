@@ -39,11 +39,11 @@ entity active_digit_decoder is
     rst_btnC     : in  STD_LOGIC;
     active_digit : out INTEGER range 0 to 7
   );
-end active_digit_decoder;
+end entity;
 
 architecture Behavioral of active_digit_decoder is
 
-signal digit_counter : integer range 0 to 7 := 0;
+  signal digit_counter : integer range 0 to 7 := 0;
 
 begin
   -- Update Active Digit
@@ -56,6 +56,6 @@ begin
     end if;
   end process;
 
-active_digit <= digit_counter;
+  active_digit <= digit_counter;
 
 end architecture;

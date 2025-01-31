@@ -36,7 +36,7 @@ entity delay is
   --  Port ( );
   port (
     clk_100MHz   : in  STD_LOGIC;
-    scroll_pos   : in  INTEGER range 0 to 15;
+    scroll_pos   : in  INTEGER range 0 to 31;
     active_digit : in  INTEGER range 0 to 7;
     delay_active : out STD_LOGIC;
     full_off : out STD_LOGIC
@@ -55,11 +55,11 @@ begin
   process (clk_100MHz)
   begin
     if rising_edge(clk_100MHz) then
-      if (scroll_pos = 23 and active_digit = 7) then
+      if (scroll_pos = 31 and active_digit = 0) then
         delay_flag <= '1'; -- Start the 2-second blank delay
         delay_counter <= 0;
       elsif delay_flag = '1' then
-        if delay_counter < 199_999_999 then
+        if delay_counter < 199_999_999 then -- counts to 2s
           delay_counter <= delay_counter + 1;
         else
           delay_flag <= '0';

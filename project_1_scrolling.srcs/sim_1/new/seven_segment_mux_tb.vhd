@@ -89,7 +89,7 @@ M1 : seven_segment_mux PORT MAP(
     seg_an => seg_an_signal,
     seg_data => seg_data_signal
 );
-stim_proc: process
+stim_proc: process 
 begin
   wait for 100 ns;
   REPORT "Starting Seven Segment MUX Testbench" SEVERITY NOTE;
