@@ -1,10 +1,9 @@
 Vivado Simulator v2023.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot seven_segment_mux_tb_behav xil_defaultlib.seven_segment_mux_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot active_digit_tb_behav xil_defaultlib.active_digit_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-4940] 'seven_segment_mux' remains a black box since it has no binding entity [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sim_1/new/seven_segment_mux_tb.vhd:84]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -13,5 +12,9 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.std_logic_textio
-Compiling architecture behavioral of entity xil_defaultlib.seven_segment_mux_tb
-Built simulation snapshot seven_segment_mux_tb_behav
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.active_digit_decoder [active_digit_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.active_digit_tb
+Built simulation snapshot active_digit_tb_behav

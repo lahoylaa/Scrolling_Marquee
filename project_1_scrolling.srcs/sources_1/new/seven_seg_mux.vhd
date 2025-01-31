@@ -16,40 +16,40 @@ end entity;
 architecture Behavioral of seven_seg_mux is
   signal seg_data_0    : std_logic_vector(7 downto 0);
   signal seg_data_1    : std_logic_vector(7 downto 0);
-  signal temp_seg_data : std_logic_vector(7 downto 0);
+  signal temp_seg_data : std_logic_vector(7 downto 0) := "11111111";
   type digit_array is array (0 to 24) of std_logic_vector(7 downto 0);
   signal digit_values : digit_array := (
-    -- -- Extra padding (8 blank spaces for delay)
-    "11111111", -- _
-    "11111111", -- _
-    "11111111", -- _
-    "11111111", -- 
-    "11111111", -- _
-    "11111111", -- _
-    "11111111", -- _
-    "11111111", -- _
-    "10001000", -- A
-    "10000110", -- E
-    "10101111", -- r
-    "11000000", -- O
-    "10101011", -- n
-    "11111111", -- _ (Blank)
-    "11000111", -- L
-    "10001000", -- A
-    "10001001", -- H
-    "11000000", -- O
-    "10010001", -- y
-    "11000111", -- L
-    "10001000", -- A
-    "10001001", -- H
-    "11000000", -- O
-    "10010001", -- y
-    "11111111" -- _ 
+    -- Padding for off output
+    "11111111", -- _ (0)
+    "11111111", -- _ (1)
+    "11111111", -- _ (2)
+    "11111111", -- _ (3)
+    "11111111", -- _ (4)
+    "11111111", -- _ (5)
+    "11111111", -- _ (6)
+    "11111111", -- _ (7)
+    "10001000", -- A (8)
+    "10000110", -- E (9)
+    "10101111", -- r (10)
+    "11000000", -- O (11)
+    "10101011", -- n (12)
+    "11111111", -- _ (13)
+    "11000111", -- L (14)
+    "10001000", -- A (15)
+    "10001001", -- H (16)
+    "11000000", -- O (17)
+    "10010001", -- y (18)
+    "11000111", -- L (19)
+    "10001000", -- A (20)
+    "10001001", -- H (21)
+    "11000000", -- O (22)
+    "10010001", -- y (23)
+    "11111111" -- _  (24)
   );
 
 begin
   -- Assign Segment Data for Active Digit
-  process (active_digit, scroll_pos)
+  process (active_digit, scroll_pos, temp_seg_data)
   begin
 
     -- Ensure a smooth transition by continuing scroll_pos without a hard reset
