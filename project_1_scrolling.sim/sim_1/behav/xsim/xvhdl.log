@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aeron/EGR426/project_1_scrolling/project_1_scrolling.srcs/sim_1/new/bcd_sevenseg_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'bcd_sevenseg_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sim_1/new/active_digit_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'active_digit_tb'

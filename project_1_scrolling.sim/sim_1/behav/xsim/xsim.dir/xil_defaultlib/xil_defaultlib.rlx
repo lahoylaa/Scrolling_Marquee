@@ -2,5 +2,9 @@
 2020.2
 May  7 2023
 15:24:31
-C:/Users/aeron/EGR426/project_1_scrolling/project_1_scrolling.srcs/sim_1/new/bcd_sevenseg_tb.vhd,1737090400,vhdl,,,,bcd_sevenseg_tb,,,,,,,,
-C:/Users/aeron/EGR426/project_1_scrolling/project_1_scrolling.srcs/sources_1/new/bcd_sevenseg.vhd,1737079240,vhdl,,,,bcd_sevenseg,,,,,,,,
+E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sim_1/new/active_digit_tb.vhd,1738337573,vhdl,,,,active_digit_tb,,,,,,,,
+E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sim_1/new/scroll_pos_tb.vhd,1738337172,vhdl,,,,scroll_pos_tb,,,,,,,,
+E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sim_1/new/seven_segment_mux_tb.vhd,1738335979,vhdl,,,,seven_segment_mux_tb,,,,,,,,
+E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/active_digit.vhd,1738319539,vhdl,,,,active_digit_decoder,,,,,,,,
+E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scroll_pos.vhd,1738336432,vhdl,,,,scroll_pos_decoder,,,,,,,,
+E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/seven_seg_mux.vhd,1738335860,vhdl,,,,seven_seg_mux,,,,,,,,

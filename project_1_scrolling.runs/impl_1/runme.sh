@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/aeron/EGR426/project_1_scrolling/project_1_scrolling.runs/impl_1'
+HD_PWD='E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -43,6 +43,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .write_bitstream.begin.rst
-EAStep vivado -log top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+EAStep vivado -log scrolling_top_layer.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source scrolling_top_layer.tcl -notrace
 
 

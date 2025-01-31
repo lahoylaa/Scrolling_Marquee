@@ -1,122 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1737607199">
-  <File Type="ROUTE-PWR" Name="top_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="top.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="top_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="top_rqa_opted.pb"/>
-  <File Type="BITSTR-MMI" Name="top.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="top_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="top_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="top_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="top_opt.dcp"/>
-  <File Type="OPT-DRC" Name="top_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="top.hwdef"/>
-  <File Type="PWROPT-DCP" Name="top_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="top_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="top_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="top_placed.dcp"/>
-  <File Type="PLACE-IO" Name="top_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="top_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="top_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="top_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="top_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="top_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="top_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="top.bin"/>
-  <File Type="PLACE-TIMING" Name="top_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="top_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="top_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="top_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="top.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="top_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="top_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="top_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="top.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="top_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="top_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="top_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="top_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="top_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="top_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="top_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="top_rqs_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="top_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="top_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="top_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="top_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="top_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="top_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="top_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="top_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="top_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="top_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="top_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="top.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="top_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="top_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="top.nky"/>
-  <File Type="BITSTR-BMM" Name="top_bd.bmm"/>
-  <File Type="PDI-FILE" Name="top.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="top_soc.pdi"/>
-  <File Type="PL-PDI-FILE" Name="top_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="top.rcfi"/>
-  <File Type="CFI_FILE" Name="top.cfi"/>
-  <File Type="RNPI_FILE" Name="top.rnpi"/>
-  <File Type="NPI_FILE" Name="top.npi"/>
-  <File Type="RBD_FILE" Name="top.rbd"/>
+<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1738337677">
+  <File Type="ROUTE-PWR" Name="scrolling_top_layer_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="scrolling_top_layer.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="scrolling_top_layer_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="scrolling_top_layer_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="scrolling_top_layer_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="scrolling_top_layer.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="scrolling_top_layer_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="scrolling_top_layer_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="scrolling_top_layer_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="scrolling_top_layer_opt.dcp"/>
+  <File Type="OPT-DRC" Name="scrolling_top_layer_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="scrolling_top_layer.hwdef"/>
+  <File Type="PWROPT-DCP" Name="scrolling_top_layer_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="scrolling_top_layer_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="scrolling_top_layer_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="scrolling_top_layer_placed.dcp"/>
+  <File Type="PLACE-IO" Name="scrolling_top_layer_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="scrolling_top_layer_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="scrolling_top_layer_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="scrolling_top_layer_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="scrolling_top_layer_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="scrolling_top_layer_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="scrolling_top_layer_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="scrolling_top_layer.bin"/>
+  <File Type="PLACE-TIMING" Name="scrolling_top_layer_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="scrolling_top_layer_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="scrolling_top_layer_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="scrolling_top_layer_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="scrolling_top_layer.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="scrolling_top_layer_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="scrolling_top_layer_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="scrolling_top_layer_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="scrolling_top_layer.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="scrolling_top_layer_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="scrolling_top_layer_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="scrolling_top_layer_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="scrolling_top_layer_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="scrolling_top_layer_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="scrolling_top_layer_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="scrolling_top_layer_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="scrolling_top_layer_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="scrolling_top_layer_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="scrolling_top_layer_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="scrolling_top_layer_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="scrolling_top_layer_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="scrolling_top_layer_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="scrolling_top_layer_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="scrolling_top_layer_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="scrolling_top_layer_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="scrolling_top_layer_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="scrolling_top_layer_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="scrolling_top_layer_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="scrolling_top_layer_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="scrolling_top_layer_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="scrolling_top_layer_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="scrolling_top_layer_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="scrolling_top_layer_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="scrolling_top_layer_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="scrolling_top_layer_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="scrolling_top_layer_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="scrolling_top_layer.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="scrolling_top_layer_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="scrolling_top_layer_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="scrolling_top_layer.nky"/>
+  <File Type="BITSTR-BMM" Name="scrolling_top_layer_bd.bmm"/>
+  <File Type="PDI-FILE" Name="scrolling_top_layer.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="scrolling_top_layer_soc.pdi"/>
+  <File Type="PL-PDI-FILE" Name="scrolling_top_layer_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="scrolling_top_layer.rcfi"/>
+  <File Type="CFI_FILE" Name="scrolling_top_layer.cfi"/>
+  <File Type="RNPI_FILE" Name="scrolling_top_layer.rnpi"/>
+  <File Type="NPI_FILE" Name="scrolling_top_layer.npi"/>
+  <File Type="RBD_FILE" Name="scrolling_top_layer.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="top.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="top.sysdef"/>
-  <File Type="BG-BGN" Name="top.bgn"/>
-  <File Type="BG-DRC" Name="top.drc"/>
-  <File Type="RDI-RDI" Name="top.vdi"/>
+  <File Type="BITSTR-LTX" Name="scrolling_top_layer.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="scrolling_top_layer.sysdef"/>
+  <File Type="BG-BGN" Name="scrolling_top_layer.bgn"/>
+  <File Type="BG-DRC" Name="scrolling_top_layer.drc"/>
+  <File Type="RDI-RDI" Name="scrolling_top_layer.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="top_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="top_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="scrolling_top_layer_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="scrolling_top_layer_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/bcd_sevenseg.vhd">
+    <File Path="$PSRCDIR/sources_1/new/10kz_clk.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/clk_divide_125Hz.vhd">
+    <File Path="$PSRCDIR/sources_1/new/active_digit.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/debouncer.vhd">
+    <File Path="$PSRCDIR/sources_1/new/half_second_clk.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/multiplexer.vhd">
+    <File Path="$PSRCDIR/sources_1/new/scroll_pos.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/two_bit_counter.vhd">
+    <File Path="$PSRCDIR/sources_1/new/seven_seg_mux.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/top.vhd">
+    <File Path="$PSRCDIR/sources_1/new/scrolling_top_layer.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -124,7 +124,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopModule" Val="scrolling_top_layer"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
@@ -154,9 +154,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
