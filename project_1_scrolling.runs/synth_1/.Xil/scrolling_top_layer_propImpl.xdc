@@ -53,3 +53,25 @@ set_property src_info {type:XDC file:1 line:85 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN J5 [get_ports rst_btnC]
 set_property src_info {type:XDC file:1 line:88 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN J2 [get_ports btnU]
+set_property src_info {type:XDC file:1 line:91 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN H2 [get_ports btnIn]
+set_property src_info {type:XDC file:1 line:96 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V2 [get_ports {switch[0]}];
+set_property src_info {type:XDC file:1 line:99 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U2 [get_ports {switch[1]}];
+set_property src_info {type:XDC file:1 line:102 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U1 [get_ports {switch[2]}];
+set_property src_info {type:XDC file:1 line:105 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN T2 [get_ports {switch[3]}];
+set_property src_info {type:XDC file:1 line:109 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V5 [get_ports {led_data[0]}]
+set_property src_info {type:XDC file:1 line:112 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V3 [get_ports {led_data[1]}]
+set_property src_info {type:XDC file:1 line:115 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U3 [get_ports {led_data[2]}]
+set_property src_info {type:XDC file:1 line:118 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U6 [get_ports {led_data[3]}]
+set_property src_info {type:XDC file:1 line:121 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V4 [get_ports {led_data[4]}]
+set_property src_info {type:XDC file:1 line:124 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V6 [get_ports {led_data[5]}]

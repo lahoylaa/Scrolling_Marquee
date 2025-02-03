@@ -6,12 +6,12 @@ entity scroll_pos_decoder is
     slow_clk   : in  STD_LOGIC;            -- Slowed-down clock for smooth scrolling
     rst_btnC   : in  STD_LOGIC;            -- Reset button (resets scroll position)
     btnU       : in  STD_LOGIC;            -- Button to pause scrolling
-    scroll_pos : out INTEGER range 0 to 24 -- Scrolling position output
+    scroll_pos : out INTEGER range 0 to 18 -- Scrolling position output
   );
 end entity;
 
 architecture Behavioral of scroll_pos_decoder is
-  signal scroll_pos_counter : integer range 0 to 24 := 0;
+  signal scroll_pos_counter : integer range 0 to 18 := 0;
 
 begin
   -- Update Scroll Position
@@ -21,7 +21,7 @@ begin
       scroll_pos_counter <= 0; -- Reset to start position
     elsif rising_edge(slow_clk) then
       if btnU = '0' then -- Only update when button is NOT held
-        scroll_pos_counter <= (scroll_pos_counter + 1) mod 25;
+        scroll_pos_counter <= (scroll_pos_counter + 1) mod 19;
       end if;
     end if;
   end process;

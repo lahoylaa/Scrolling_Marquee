@@ -72,6 +72,7 @@ proc create_report { reportName command } {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 4
+set_param synth.incrementalSynthesisCache C:/Users/aeron/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-59224-DESKTOP-88C58FM/incrSyn
 set_param xicom.use_bs_reader 1
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
@@ -92,8 +93,14 @@ OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/10kz_clk.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/active_digit.vhd
+  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/clk_divide_125Hz.vhd
+  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/debouncer.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/half_second_clk.vhd
+  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/led_clk_divider.vhd
+  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/led_decoder.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scroll_pos.vhd
+  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/switch_decoder.vhd
+  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/sequence_checker.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/seven_seg_mux.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scrolling_top_layer.vhd
 }

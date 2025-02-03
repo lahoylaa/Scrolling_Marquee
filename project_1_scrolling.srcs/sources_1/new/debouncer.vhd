@@ -45,7 +45,6 @@ architecture Behavioral of debouncer is
 
   signal count     : std_logic_vector(1 downto 0);
   signal debounce  : std_logic := '0';
-  signal shift_reg : std_logic_vector(3 downto 0);
 
 begin
   process (clk, reset)

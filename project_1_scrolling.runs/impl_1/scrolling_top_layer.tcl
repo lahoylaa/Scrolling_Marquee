@@ -127,6 +127,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 4
+  set_param synth.incrementalSynthesisCache C:/Users/aeron/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-59224-DESKTOP-88C58FM/incrSyn
   set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 6  }
   open_checkpoint scrolling_top_layer_routed.dcp
