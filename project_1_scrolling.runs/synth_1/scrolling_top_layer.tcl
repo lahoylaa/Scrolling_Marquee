@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.runs/synth_1/scrolling_top_layer.tcl"
+  variable script "C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.runs/synth_1/scrolling_top_layer.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,39 +70,33 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param chipscope.maxJobs 4
-set_param synth.incrementalSynthesisCache C:/Users/aeron/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-59224-DESKTOP-88C58FM/incrSyn
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.cache/wt [current_project]
-set_property parent.project_path E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.cache/wt [current_project]
+set_property parent.project_path C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo e:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.cache/ip [current_project]
+set_property ip_output_repo c:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/10kz_clk.vhd
-  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/active_digit.vhd
-  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/clk_divide_125Hz.vhd
-  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/debouncer.vhd
-  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/half_second_clk.vhd
-  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/led_clk_divider.vhd
-  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/led_decoder.vhd
-  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scroll_pos.vhd
-  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/switch_decoder.vhd
-  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/sequence_checker.vhd
-  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/seven_seg_mux.vhd
-  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scrolling_top_layer.vhd
+  C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/10kz_clk.vhd
+  C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/active_digit.vhd
+  C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/clk_divide_125Hz.vhd
+  C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/debouncer.vhd
+  C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/half_second_clk.vhd
+  C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/led_clk_divider.vhd
+  C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/led_decoder.vhd
+  C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scroll_pos.vhd
+  C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/switch_decoder.vhd
+  C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/sequence_checker.vhd
+  C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/seven_seg_mux.vhd
+  C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scrolling_top_layer.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -113,12 +107,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/constrs_1/new/segment_pins.xdc
-set_property used_in_implementation false [get_files E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/constrs_1/new/segment_pins.xdc]
+read_xdc C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/constrs_1/new/segment_pins.xdc
+set_property used_in_implementation false [get_files C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/constrs_1/new/segment_pins.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -incremental E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/utils_1/imports/synth_1/clk_divide_125Hz.dcp
+read_checkpoint -incremental C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/utils_1/imports/synth_1/clk_divide_125Hz.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

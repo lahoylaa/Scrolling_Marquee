@@ -34,13 +34,14 @@ entity sequence_checker is
   port (
     scroll_pos     : in  INTEGER range 0 to 18;
     lock           : in  STD_LOGIC;
-    sequence_state : out STD_LOGIC
+    sequence_state : out std_logic
    -- progress_state : out STD_LOGIC
   );
 end entity;
 
 architecture Behavioral of sequence_checker is
   signal current_mode  : std_logic := '1'; -- initially in a lock state
+  --signal current_mode : integer range 0 to 2;
   signal sequence_done : std_logic := '0';
   signal lock_temp_state : std_logic := '1'; -- initially in lock state
   signal progress : std_logic := '0';

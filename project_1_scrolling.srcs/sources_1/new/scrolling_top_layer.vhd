@@ -55,6 +55,7 @@ architecture Behavioral of scrolling_top_layer is
   signal led_clk_signal        : std_logic;
   signal sequence_state_signal : std_logic;
   signal progress_state_signal : std_logic;
+  signal mode_signal : integer range 0 to 2;
 
 begin
 
@@ -98,6 +99,7 @@ begin
     port map (
       switch => switch,
       btnIn  => btn_signal,
+      mode => mode_signal,
       lock   => lock_signal
     );
 
@@ -137,6 +139,7 @@ begin
       active_digit   => active_digit_signal,
       scroll_pos     => scroll_pos_signal,
       sequence_state => sequence_state_signal,
+      mode => mode_signal,
       seg_an         => seg_an,
       seg_data       => seg_data
     );

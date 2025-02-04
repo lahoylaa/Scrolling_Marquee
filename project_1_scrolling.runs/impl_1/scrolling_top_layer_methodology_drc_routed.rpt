@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Mon Feb  3 10:20:02 2025
-| Host         : DESKTOP-88C58FM running 64-bit major release  (build 9200)
+| Date         : Tue Feb  4 15:58:16 2025
+| Host         : RussComputer running 64-bit major release  (build 9200)
 | Command      : report_methodology -file scrolling_top_layer_methodology_drc_routed.rpt -pb scrolling_top_layer_methodology_drc_routed.pb -rpx scrolling_top_layer_methodology_drc_routed.rpx
 | Design       : scrolling_top_layer
 | Device       : xc7s50csga324-1
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 118
+             Violations found: 120
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell    | 116        |
-| TIMING-20 | Warning          | Non-clocked latch              | 1          |
+| TIMING-20 | Warning          | Non-clocked latch              | 3          |
 | LATCH-1   | Advisory         | Existing latches in the design | 1          |
 +-----------+------------------+--------------------------------+------------+
 
@@ -616,12 +616,22 @@ Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
+The latch L1/btn_flag_reg[0] cannot be properly analyzed as its control pin L1/btn_flag_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
 The latch L1/lock_signal_reg cannot be properly analyzed as its control pin L1/lock_signal_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch L1/mode_checker_reg[0] cannot be properly analyzed as its control pin L1/mode_checker_reg[0]/G is not reached by a timing clock
 Related violations: <none>
 
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 1 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 3 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 
