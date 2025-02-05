@@ -2,6 +2,7 @@
 set_property PACKAGE_PIN F14 [get_ports clk_100MHz]
 set_property IOSTANDARD LVCMOS33 [get_ports clk_100MHz]
 
+
 # Mapping Seven Segment
 set_property PACKAGE_PIN D7 [get_ports {seg_data[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {seg_data[0]}]
@@ -53,7 +54,6 @@ set_property PACKAGE_PIN C1 [get_ports {seg_data[15]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {seg_data[15]}]
 
 
-
 # Mapping Anodes
 set_property PACKAGE_PIN A8 [get_ports {seg_an[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {seg_an[0]}]
@@ -87,3 +87,40 @@ set_property IOSTANDARD LVCMOS33 [get_ports rst_btnC]
 
 set_property PACKAGE_PIN J2 [get_ports btnU]
 set_property IOSTANDARD LVCMOS33 [get_ports btnU]
+
+set_property PACKAGE_PIN H2 [get_ports btnS]
+set_property IOSTANDARD LVCMOS33 [get_ports btnS]
+
+
+# Mapping Switches
+set_property PACKAGE_PIN V2 [get_ports {switch[0]}];
+set_property IOSTANDARD LVCMOS33 [get_ports {switch[0]}]
+
+set_property PACKAGE_PIN U2 [get_ports {switch[1]}];
+set_property IOSTANDARD LVCMOS33 [get_ports {switch[1]}]
+
+set_property PACKAGE_PIN U1 [get_ports {switch[2]}];
+set_property IOSTANDARD LVCMOS33 [get_ports {switch[2]}]
+
+set_property PACKAGE_PIN T2 [get_ports {switch[3]}];
+set_property IOSTANDARD LVCMOS33 [get_ports {switch[3]}]
+
+
+# Mapping RGB LEDs
+set_property PACKAGE_PIN V5 [get_ports {led_data[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_data[0]}]
+
+set_property PACKAGE_PIN V3 [get_ports {led_data[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_data[1]}]
+
+set_property PACKAGE_PIN U3 [get_ports {led_data[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_data[2]}]
+
+set_property PACKAGE_PIN U6 [get_ports {led_data[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_data[3]}]
+
+set_property PACKAGE_PIN V4 [get_ports {led_data[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_data[4]}]
+
+set_property PACKAGE_PIN V6 [get_ports {led_data[5]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {led_data[5]}]
