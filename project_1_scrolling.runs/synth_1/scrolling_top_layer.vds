@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Feb  5 02:37:52 2025
-# Process ID: 55312
+# Start of session at: Wed Feb  5 03:01:27 2025
+# Process ID: 62924
 # Current directory: E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.runs/synth_1
 # Command line: vivado.exe -log scrolling_top_layer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source scrolling_top_layer.tcl
 # Log file: E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.runs/synth_1/scrolling_top_layer.vds
@@ -12,7 +12,7 @@
 # Running On: DESKTOP-88C58FM, OS: Windows, CPU Frequency: 3793 MHz, CPU Physical cores: 16, Host memory: 14920 MB
 #-----------------------------------------------------------
 source scrolling_top_layer.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 440.531 ; gain = 164.996
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 441.262 ; gain = 163.219
 Command: read_checkpoint -incremental E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/utils_1/imports/synth_1/clk_divide_125Hz.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/utils_1/imports/synth_1/clk_divide_125Hz.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -23,9 +23,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Device 21-403] Loading part xc7s50csga324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 48408
+INFO: [Synth 8-7075] Helper process launched with PID 49112
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1250.855 ; gain = 409.891
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1252.938 ; gain = 411.094
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'scrolling_top_layer' [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scrolling_top_layer.vhd:46]
 INFO: [Synth 8-638] synthesizing module 'clk_divide_125Hz' [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/clk_divide_125Hz.vhd:45]
@@ -45,27 +45,27 @@ INFO: [Synth 8-638] synthesizing module 'active_digit_decoder' [E:/Projects/FPGA
 INFO: [Synth 8-256] done synthesizing module 'active_digit_decoder' (0#1) [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/active_digit.vhd:44]
 INFO: [Synth 8-638] synthesizing module 'scroll_pos_decoder' [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scroll_pos.vhd:13]
 INFO: [Synth 8-256] done synthesizing module 'scroll_pos_decoder' (0#1) [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scroll_pos.vhd:13]
-INFO: [Synth 8-638] synthesizing module 'state_checker' [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/state_checker.vhd:45]
-WARNING: [Synth 8-614] signal 'rst_btnC' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/state_checker.vhd:56]
-INFO: [Synth 8-256] done synthesizing module 'state_checker' (0#1) [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/state_checker.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'state_checker' [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/state_checker.vhd:43]
+WARNING: [Synth 8-614] signal 'rst_btnC' is read in the process but is not in the sensitivity list [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/state_checker.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'state_checker' (0#1) [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/state_checker.vhd:43]
 INFO: [Synth 8-638] synthesizing module 'led_decoder' [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/led_decoder.vhd:35]
 INFO: [Synth 8-256] done synthesizing module 'led_decoder' (0#1) [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/led_decoder.vhd:35]
 INFO: [Synth 8-638] synthesizing module 'seven_seg_mux' [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/seven_seg_mux.vhd:17]
 INFO: [Synth 8-256] done synthesizing module 'seven_seg_mux' (0#1) [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/seven_seg_mux.vhd:17]
 INFO: [Synth 8-256] done synthesizing module 'scrolling_top_layer' (0#1) [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scrolling_top_layer.vhd:46]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1342.895 ; gain = 501.930
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1342.852 ; gain = 501.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1342.895 ; gain = 501.930
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1342.852 ; gain = 501.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1342.895 ; gain = 501.930
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1342.852 ; gain = 501.008
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1342.895 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1342.852 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -76,36 +76,36 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/scrolling_top_layer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1385.094 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1370.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1385.094 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1370.008 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Preparing Guide Design
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-6895] The reference checkpoint E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/utils_1/imports/synth_1/clk_divide_125Hz.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Doing Graph Differ : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Preparing Guide Design : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'temp_state_reg' in module 'state_checker'
 WARNING: [Synth 8-327] inferring latch for variable 'lock_signal_reg' [E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/switch_decoder.vhd:51]
@@ -118,7 +118,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'lock_signal_reg' [E:/Projec
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'temp_state_reg' using encoding 'one-hot' in module 'state_checker'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 
 
@@ -183,7 +183,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -194,7 +194,7 @@ ROM: Preliminary Mapping Report
 |Module Name   | RTL Object   | Depth x Width | Implemented As | 
 +--------------+--------------+---------------+----------------+
 |seven_seg_mux | pass_values  | 32x7          | LUT            | 
-|seven_seg_mux | enter_values | 32x7          | LUT            | 
+|seven_seg_mux | enter_values | 32x8          | LUT            | 
 +--------------+--------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
@@ -204,19 +204,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -234,37 +234,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -283,11 +283,11 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |    22|
 |3     |LUT1   |     6|
-|4     |LUT2   |    57|
+|4     |LUT2   |    74|
 |5     |LUT3   |    14|
-|6     |LUT4   |    17|
-|7     |LUT5   |    53|
-|8     |LUT6   |    37|
+|6     |LUT4   |    18|
+|7     |LUT5   |    43|
+|8     |LUT6   |    44|
 |9     |FDCE   |   106|
 |10    |FDPE   |     2|
 |11    |FDRE   |     7|
@@ -297,28 +297,28 @@ Report Cell Usage:
 |15    |OBUF   |    30|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1370.008 ; gain = 528.164
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 1 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1385.094 ; gain = 501.930
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1385.094 ; gain = 544.129
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1370.008 ; gain = 501.008
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1370.008 ; gain = 528.164
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1385.094 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1382.008 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1385.094 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1385.652 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   LD => LDCE: 1 instance 
 
-Synth Design complete | Checksum: 1af7d833
+Synth Design complete | Checksum: 14ea1d38
 INFO: [Common 17-83] Releasing license: Synthesis
 44 Infos, 4 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1385.094 ; gain = 919.680
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1385.652 ; gain = 919.504
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.runs/synth_1/scrolling_top_layer.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file scrolling_top_layer_utilization_synth.rpt -pb scrolling_top_layer_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Feb  5 02:38:27 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  5 03:02:03 2025...
