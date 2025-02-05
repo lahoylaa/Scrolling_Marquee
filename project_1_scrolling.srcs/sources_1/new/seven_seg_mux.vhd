@@ -68,7 +68,7 @@ architecture Behavioral of seven_seg_mux is
     "10001110", -- C F
     "10001000", -- E A
     "11111001", -- S I
-    "10110111", -- S L
+    "11000111", -- S L
     "11111111", -- Padding
     "11111111"
   );

@@ -34,7 +34,7 @@ entity state_checker is
   port (
     slow_clk      : in  STD_LOGIC;
     rst_btnC      : in  STD_LOGIC;
-    lock          : in  STD_LOGIC;
+    lock          : in  INTEGER range 0 to 2;
     scroll_pos    : in  INTEGER range 0 to 18;
     current_state : out INTEGER range 0 to 2
   );
@@ -47,16 +47,18 @@ architecture Behavioral of state_checker is
   constant FAIL  : integer := 2;
 
   signal temp_state        : integer range 0 to 2 := ENTER; -- Initially ENTER
-  signal lock_prev         : std_logic            := '1';   -- Track previous lock state
+  --signal lock_prev         : std_logic            := '1';   -- Track previous lock state
+  signal lock_prev         : integer range 0 to 2 := 0;     -- Track previous lock state
   signal check_lock_change : std_logic            := '0';   -- Detect lock state change
 
 begin
+
   process (slow_clk)
   begin
 
     if (rst_btnC = '1') then
       temp_state <= 0;
-      lock_prev <= '1';
+      lock_prev <= 0;
       check_lock_change <= '0';
 
     elsif (slow_clk'event and rising_edge(slow_clk)) then
@@ -69,9 +71,9 @@ begin
       case temp_state is
         when ENTER => -- ENTER CODE (default state)
           if (check_lock_change = '1' and scroll_pos = 18) then
-            if (lock = '1') then
+            if (lock = 2) then
               temp_state <= 2; -- FAIL state
-            else
+            elsif (lock = 1) then
               temp_state <= 1; -- PASS state
             end if;
             check_lock_change <= '0'; -- Reset after transition

@@ -32,26 +32,31 @@ library IEEE;
 entity switch_decoder is
   --  Port ( );
   port (
-    switch : in  STD_LOGIC_VECTOR(3 downto 0);
-    btnS   : in  STD_LOGIC;
-    lock   : out STD_LOGIC
+    switch     : in  STD_LOGIC_VECTOR(3 downto 0);
+    btnS       : in  STD_LOGIC;
+    lock       : out INTEGER range 0 to 2
   );
 end entity;
 
 architecture Behavioral of switch_decoder is
 
   constant CODE : std_logic_vector(3 downto 0) := "1001";
-  signal lock_signal : std_logic := '1';
+  --signal lock_signal : std_logic := '1';
+  signal lock_signal      : integer range 0 to 2 := 0;   -- IDLE state
+  signal next_lock_signal : integer range 0 to 2 := 0;   -- Next state to be assigned to lock_signal
+  signal lock_active      : std_logic            := '0'; -- Flag to indicate lock state is active
 
 begin
-  process(switch, btnS)
+  process (switch, btnS)
   begin
-    if (btnS = '1') then
-      case switch is
-        when CODE => lock_signal <= '0'; -- unlocked
-        when others => lock_signal <= '1';
-      end case;
-    end if;
+      if (btnS = '1') then
+        case switch is
+          when CODE =>
+            lock_signal <= 1; -- unlocked
+          when others =>
+            lock_signal <= 2; -- locked
+        end case;
+      end if;
   end process;
 
   lock <= lock_signal;
