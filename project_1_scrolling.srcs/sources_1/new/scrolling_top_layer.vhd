@@ -54,6 +54,8 @@ architecture Behavioral of scrolling_top_layer is
   signal btn_signal : std_logic;
   signal led_clk_signal : std_logic;
 
+  signal current_state_signal : integer range 0 to 2;
+
 begin
 button_clock: entity work.clk_divide_125Hz
     port map (
@@ -113,20 +115,30 @@ button_clock: entity work.clk_divide_125Hz
       scroll_pos => scroll_pos_signal
     );
 
+    K1: entity work.state_checker
+    port map(
+      slow_clk => slow_clk_signal,
+      rst_btnC => rst_btnC,
+      lock => lock_signal,
+      scroll_pos => scroll_pos_signal,
+      current_state => current_state_signal
+    );
+
     P1: entity work.led_decoder
     port map (
       lock           => lock_signal,
       led_clk        => led_clk_signal,
-      --progress_state => progress_state_signal,
+      scroll_pos => scroll_pos_signal,
+      state => current_state_signal,
       led_data       => led_data
     );
 
   M1: entity work.seven_seg_mux
     port map (
-      slow_clk => slow_clk_signal,
       active_digit => active_digit_signal,
       scroll_pos   => scroll_pos_signal,
-      lock => lock_signal,
+      state => current_state_signal,
+      --lock => lock_signal,
       seg_an       => seg_an,
       seg_data     => seg_data
     );

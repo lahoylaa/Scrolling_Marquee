@@ -70,8 +70,12 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 4
+set_param synth.incrementalSynthesisCache C:/Users/aeron/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-47872-DESKTOP-88C58FM/incrSyn
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -96,6 +100,7 @@ read_vhdl -library xil_defaultlib {
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/led_decoder.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scroll_pos.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/switch_decoder.vhd
+  E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/state_checker.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/seven_seg_mux.vhd
   E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/scrolling_top_layer.vhd
 }

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Tue Feb  4 23:29:32 2025
+| Date         : Wed Feb  5 02:38:27 2025
 | Host         : DESKTOP-88C58FM running 64-bit major release  (build 9200)
 | Command      : report_utilization -file scrolling_top_layer_utilization_synth.rpt -pb scrolling_top_layer_utilization_synth.pb
 | Design       : scrolling_top_layer
@@ -31,11 +31,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |  147 |     0 |          0 |     32600 |  0.45 |
-|   LUT as Logic          |  147 |     0 |          0 |     32600 |  0.45 |
+| Slice LUTs*             |  143 |     0 |          0 |     32600 |  0.44 |
+|   LUT as Logic          |  143 |     0 |          0 |     32600 |  0.44 |
 |   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
-| Slice Registers         |  118 |     0 |          0 |     65200 |  0.18 |
-|   Register as Flip Flop |  117 |     0 |          0 |     65200 |  0.18 |
+| Slice Registers         |  117 |     0 |          0 |     65200 |  0.18 |
+|   Register as Flip Flop |  116 |     0 |          0 |     65200 |  0.18 |
 |   Register as Latch     |    1 |     0 |          0 |     65200 | <0.01 |
 | F7 Muxes                |    0 |     0 |          0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
@@ -56,10 +56,10 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 0     |          Yes |           - |          Set |
-| 104   |          Yes |           - |        Reset |
-| 0     |          Yes |         Set |            - |
-| 14    |          Yes |       Reset |            - |
+| 2     |          Yes |           - |          Set |
+| 107   |          Yes |           - |        Reset |
+| 1     |          Yes |         Set |            - |
+| 7     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -147,18 +147,20 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     |  103 |        Flop & Latch |
-| LUT2     |   55 |                 LUT |
-| LUT5     |   54 |                 LUT |
+| FDCE     |  106 |        Flop & Latch |
+| LUT2     |   57 |                 LUT |
+| LUT5     |   53 |                 LUT |
 | LUT6     |   37 |                 LUT |
 | OBUF     |   30 |                  IO |
 | CARRY4   |   22 |          CarryLogic |
-| LUT4     |   21 |                 LUT |
-| LUT3     |   17 |                 LUT |
-| FDRE     |   14 |        Flop & Latch |
+| LUT4     |   17 |                 LUT |
+| LUT3     |   14 |                 LUT |
 | IBUF     |    8 |                  IO |
+| FDRE     |    7 |        Flop & Latch |
 | LUT1     |    6 |                 LUT |
+| FDPE     |    2 |        Flop & Latch |
 | LDCE     |    1 |        Flop & Latch |
+| FDSE     |    1 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
