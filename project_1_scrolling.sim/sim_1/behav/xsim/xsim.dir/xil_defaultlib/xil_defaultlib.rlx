@@ -2,5 +2,7 @@
 2020.2
 May  7 2023
 15:24:31
-C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sim_1/new/led_decoder_tb.vhd,1738789192,vhdl,,,,led_decoder_tb,,,,,,,,
-C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/led_decoder.vhd,1738787085,vhdl,,,,led_decoder,,,,,,,,
+E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sim_1/new/state_checker_tb.vhd,1738813077,vhdl,,,,state_checker_tb,,,,,,,,
+E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sim_1/new/switch_decoder_tb.vhd,1738811361,vhdl,,,,switch_decoder_tb,,,,,,,,
+E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/state_checker.vhd,1738812289,vhdl,,,,state_checker,,,,,,,,
+E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sources_1/new/switch_decoder.vhd,1738811432,vhdl,,,,switch_decoder,,,,,,,,

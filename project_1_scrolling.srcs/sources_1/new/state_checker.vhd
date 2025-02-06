@@ -46,10 +46,9 @@ architecture Behavioral of state_checker is
   constant PASS  : integer := 1;
   constant FAIL  : integer := 2;
 
-  signal temp_state        : integer range 0 to 2 := ENTER; -- Initially ENTER
-  --signal lock_prev         : std_logic            := '1';   -- Track previous lock state
+  signal temp_state        : integer range 0 to 2  := ENTER; -- Initially ENTER
   signal lock_prev         : integer range 0 to 17 := 0;     -- Track previous lock state
-  signal check_lock_change : std_logic            := '0';   -- Detect lock state change
+  signal check_lock_change : std_logic             := '0';   -- Detect lock state change
 
 begin
 
@@ -71,6 +70,7 @@ begin
       case temp_state is
         when ENTER => -- ENTER CODE (default state)
           if (check_lock_change = '1' and scroll_pos = 18) then
+            -- Anything not 1 or 0 fail it
             if (lock /= 1 and lock /= 0) then
               temp_state <= 2; -- FAIL state
             elsif (lock = 1) then

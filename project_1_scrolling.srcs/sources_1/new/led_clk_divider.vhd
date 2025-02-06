@@ -53,12 +53,12 @@ begin
       if (led_clk_count = 24_999_999) then
         led_clk_count <= 0;
         led_clk <= not led_clk;
-     else
+      else
         led_clk_count <= led_clk_count + 1;
       end if;
     end if;
   end process;
 
-led_clkout <= led_clk;
+  led_clkout <= led_clk;
 
 end architecture;

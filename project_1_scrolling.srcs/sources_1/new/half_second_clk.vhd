@@ -18,32 +18,30 @@
 -- 
 ----------------------------------------------------------------------------------
 
-
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+  use IEEE.STD_LOGIC_1164.all;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+  -- Uncomment the following library declaration if using
+  -- arithmetic functions with Signed or Unsigned values
+  --use IEEE.NUMERIC_STD.ALL;
+  -- Uncomment the following library declaration if instantiating
+  -- any Xilinx leaf cells in this code.
+  --library UNISIM;
+  --use UNISIM.VComponents.all;
 
 entity half_second_clk is
---  Port ( );
-Port(
-    clk_100MHz : in STD_LOGIC;
-    rst_btnC : in STD_LOGIC;
+  --  Port ( );
+  port (
+    clk_100MHz  : in  STD_LOGIC;
+    rst_btnC    : in  STD_LOGIC;
     slow_clkout : out STD_LOGIC
-);
-end half_second_clk;
+  );
+end entity;
 
 architecture Behavioral of half_second_clk is
 
-signal slow_clk_count : integer range 0 to 50_000_000 := 0;
-signal slow_clk : std_logic;
+  signal slow_clk_count : integer range 0 to 50_000_000 := 0;
+  signal slow_clk       : std_logic;
 
 begin
   -- Slow Clock for Scrolling
@@ -62,6 +60,6 @@ begin
     end if;
   end process;
 
-slow_clkout <= slow_clk;
+  slow_clkout <= slow_clk;
 
-end Behavioral;
+end architecture;

@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/sim_1/new/led_decoder_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'led_decoder_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/sim_1/new/state_checker_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'state_checker_tb'

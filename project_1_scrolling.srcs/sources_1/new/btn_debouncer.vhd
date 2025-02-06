@@ -43,8 +43,8 @@ end entity;
 
 architecture Behavioral of btn_debouncer is
 
-  signal count     : std_logic_vector(1 downto 0);
-  signal debounce  : std_logic := '0';
+  signal count    : std_logic_vector(1 downto 0);
+  signal debounce : std_logic := '0';
 
 begin
   process (clk, reset)
@@ -53,19 +53,19 @@ begin
       count <= "00";
       debounce <= '0';
     elsif (clk'event and rising_edge(clk)) then
-    if(btn_in = '1') then
-     if(count = "11") then
-      debounce <= '1';
-      count <= "00";
-     else
-     debounce <= '0';
-     count <= count + 1;
-     end if;
-     
-    else
-     debounce <= '0';
-     count <= "00";
-    end if;
+      if (btn_in = '1') then
+        if (count = "11") then
+          debounce <= '1';
+          count <= "00";
+        else
+          debounce <= '0';
+          count <= count + 1;
+        end if;
+
+      else
+        debounce <= '0';
+        count <= "00";
+      end if;
     end if;
   end process;
 

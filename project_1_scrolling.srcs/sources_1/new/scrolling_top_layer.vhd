@@ -44,16 +44,15 @@ entity scrolling_top_layer is
 end entity;
 
 architecture Behavioral of scrolling_top_layer is
+
   signal fast_clk_signal     : std_logic;
   signal slow_clk_signal     : std_logic;
   signal active_digit_signal : INTEGER range 0 to 7;
   signal scroll_pos_signal   : INTEGER range 0 to 18;
-
-  signal clk_out_signal : std_logic;
-  --signal lock_signal : std_logic;
-  signal lock_signal    : integer range 0 to 17;
-  signal btn_signal     : std_logic;
-  signal led_clk_signal : std_logic;
+  signal clk_out_signal      : std_logic;
+  signal lock_signal         : integer range 0 to 17;
+  signal btn_signal          : std_logic;
+  signal led_clk_signal      : std_logic;
 
   signal current_state_signal : integer range 0 to 2;
 

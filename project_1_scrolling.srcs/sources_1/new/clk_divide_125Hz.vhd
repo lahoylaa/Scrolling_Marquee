@@ -18,52 +18,50 @@
 -- 
 ----------------------------------------------------------------------------------
 
-
 library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.std_logic_unsigned.all;
+  use IEEE.STD_LOGIC_1164.all;
+  use IEEE.std_logic_unsigned.all;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+  -- Uncomment the following library declaration if using
+  -- arithmetic functions with Signed or Unsigned values
+  --use IEEE.NUMERIC_STD.ALL;
+  -- Uncomment the following library declaration if instantiating
+  -- any Xilinx leaf cells in this code.
+  --library UNISIM;
+  --use UNISIM.VComponents.all;
 
 entity clk_divide_125Hz is
---  Port ( );
-port(
-    clk : in STD_LOGIC;
-    reset : in STD_LOGIC;
+  --  Port ( );
+  port (
+    clk    : in  STD_LOGIC;
+    reset  : in  STD_LOGIC;
     clkout : out STD_LOGIC
-);
+  );
 
-end clk_divide_125Hz;
+end entity;
 
 architecture Behavioral of clk_divide_125Hz is
 
-signal count : std_logic_vector (19 downto 0); -- 20 bits
-signal clk_temp : std_logic;
+  signal count    : std_logic_vector(19 downto 0); -- 20 bits
+  signal clk_temp : std_logic;
 
 begin
-    process(clk, reset)
-     begin
-      if(reset = '1') then
+  process (clk, reset)
+  begin
+    if (reset = '1') then
+      count <= "00000000000000000000";
+      clk_temp <= '0';
+    elsif (clk'event and rising_edge(clk)) then
+      if (count = 200000) then
         count <= "00000000000000000000";
-        clk_temp <= '0';
-      elsif(clk'event and rising_edge(clk)) then
-        if(count = 200000) then
-            count <= "00000000000000000000";
-            clk_temp <= not clk_temp;
-        else
-            count <= count + 1;
-            clk_temp <= clk_temp;
-        end if;
+        clk_temp <= not clk_temp;
+      else
+        count <= count + 1;
+        clk_temp <= clk_temp;
       end if;
-    end process;
+    end if;
+  end process;
 
-clkout <= clk_temp;
+  clkout <= clk_temp;
 
-end Behavioral;
+end architecture;

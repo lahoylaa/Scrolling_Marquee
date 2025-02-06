@@ -8,7 +8,7 @@ entity seven_seg_mux is
   port (
     active_digit : in  INTEGER range 0 to 7;  -- Controls which digit is active
     scroll_pos   : in  INTEGER range 0 to 18; -- Smoothly scrolls without jumps
-    state         : in  INTEGER range 0 to 2;
+    state        : in  INTEGER range 0 to 2;
     seg_an       : out STD_LOGIC_VECTOR(7 downto 0);
     seg_data     : out STD_LOGIC_VECTOR(15 downto 0)
   );
@@ -60,15 +60,15 @@ architecture Behavioral of seven_seg_mux is
     -- Padding
     "11111111", "11111111", "11111111", "11111111",
     "11111111", "11111111", "11111111", "11111111",
-    "11000110", -- n C
-    "11000000", -- O O
-    "10100001", -- _ d
-    "10000110", -- A E
-    "11111111", -- C _
-    "10001110", -- C F
-    "10001000", -- E A
-    "11111001", -- S I
-    "11000111", -- S L
+    "11000110", -- C
+    "11000000", -- O
+    "10100001", -- d
+    "10000110", -- E
+    "11111111", -- _
+    "10001110", -- F
+    "10001000", -- A
+    "11111001", -- I
+    "11000111", -- L
     "11111111", -- Padding
     "11111111"
   );

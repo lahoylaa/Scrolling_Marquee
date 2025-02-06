@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Feb  5 15:24:56 2025
-# Process ID: 16672
-# Current directory: C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.runs/synth_1
+# Start of session at: Thu Feb  6 01:13:20 2025
+# Process ID: 61276
+# Current directory: E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.runs/synth_1
 # Command line: vivado.exe -log scrolling_top_layer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source scrolling_top_layer.tcl
-# Log file: C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.runs/synth_1/scrolling_top_layer.vds
-# Journal file: C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.runs/synth_1\vivado.jou
-# Running On: RussComputer, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17019 MB
+# Log file: E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.runs/synth_1/scrolling_top_layer.vds
+# Journal file: E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.runs/synth_1\vivado.jou
+# Running On: DESKTOP-88C58FM, OS: Windows, CPU Frequency: 3793 MHz, CPU Physical cores: 16, Host memory: 14920 MB
 #-----------------------------------------------------------
 source scrolling_top_layer.tcl -notrace

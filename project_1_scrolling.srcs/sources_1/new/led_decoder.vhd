@@ -48,9 +48,9 @@ architecture Behavioral of led_decoder is
 
   -- Internal Signals
   signal temp_led_data     : std_logic_vector(5 downto 0) := OFF;
-  signal blink_state       : std_logic := '0';
-  signal lock_prev         : integer range 0 to 17 := 0;
-  signal transition_active : std_logic := '0';
+  signal blink_state       : std_logic                    := '0';
+  signal lock_prev         : integer range 0 to 17        := 0;
+  signal transition_active : std_logic                    := '0';
 
 begin
   process (led_clk)
@@ -104,13 +104,6 @@ begin
         end case;
       end if;
 
-      -- -- Blink LEDs
-      -- if (blink_state = '1') then
-      --   temp_led_data <= temp_led_data;
-      -- else
-      --   temp_led_data <= OFF;
-      -- end if;
-      -- Update the prev lock
       lock_prev <= lock;
     end if;
   end process;
