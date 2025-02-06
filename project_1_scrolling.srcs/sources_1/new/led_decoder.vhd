@@ -24,7 +24,7 @@ library IEEE;
 
 entity led_decoder is
   port (
-    lock       : in  INTEGER range 0 to 2;
+    lock       : in  INTEGER range 0 to 17;
     led_clk    : in  STD_LOGIC;
     scroll_pos : in  INTEGER range 0 to 18; -- Now integer to track scrolling
     state      : in  INTEGER range 0 to 2;
@@ -47,9 +47,9 @@ architecture Behavioral of led_decoder is
   constant PURPLE : std_logic_vector(5 downto 0) := std_logic_vector(unsigned(BLUE) or unsigned(RED));
 
   -- Internal Signals
-  signal temp_led_data     : std_logic_vector(5 downto 0);
+  signal temp_led_data     : std_logic_vector(5 downto 0) := OFF;
   signal blink_state       : std_logic := '0';
-  signal lock_prev         : integer range 0 to 2 := 0;
+  signal lock_prev         : integer range 0 to 17 := 0;
   signal transition_active : std_logic := '0';
 
 begin

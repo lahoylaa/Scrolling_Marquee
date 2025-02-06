@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:E:/Projects/FPGA/Scrolling_Marquee/project_1_scrolling.srcs/constrs_1/new/segment_pins.xdc rfile:../../../project_1_scrolling.srcs/constrs_1/new/segment_pins.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/aeron/EGR426/Scrolling_Marquee/project_1_scrolling.srcs/constrs_1/new/segment_pins.xdc rfile:../../../project_1_scrolling.srcs/constrs_1/new/segment_pins.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN F14 [get_ports clk_100MHz]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]

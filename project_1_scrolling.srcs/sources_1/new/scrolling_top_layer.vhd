@@ -51,7 +51,7 @@ architecture Behavioral of scrolling_top_layer is
 
   signal clk_out_signal : std_logic;
   --signal lock_signal : std_logic;
-  signal lock_signal    : integer range 0 to 2;
+  signal lock_signal    : integer range 0 to 17;
   signal btn_signal     : std_logic;
   signal led_clk_signal : std_logic;
 

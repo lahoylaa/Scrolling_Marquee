@@ -34,7 +34,7 @@ entity state_checker is
   port (
     slow_clk      : in  STD_LOGIC;
     rst_btnC      : in  STD_LOGIC;
-    lock          : in  INTEGER range 0 to 2;
+    lock          : in  INTEGER range 0 to 17;
     scroll_pos    : in  INTEGER range 0 to 18;
     current_state : out INTEGER range 0 to 2
   );
@@ -48,7 +48,7 @@ architecture Behavioral of state_checker is
 
   signal temp_state        : integer range 0 to 2 := ENTER; -- Initially ENTER
   --signal lock_prev         : std_logic            := '1';   -- Track previous lock state
-  signal lock_prev         : integer range 0 to 2 := 0;     -- Track previous lock state
+  signal lock_prev         : integer range 0 to 17 := 0;     -- Track previous lock state
   signal check_lock_change : std_logic            := '0';   -- Detect lock state change
 
 begin
@@ -71,7 +71,7 @@ begin
       case temp_state is
         when ENTER => -- ENTER CODE (default state)
           if (check_lock_change = '1' and scroll_pos = 18) then
-            if (lock = 2) then
+            if (lock /= 1 and lock /= 0) then
               temp_state <= 2; -- FAIL state
             elsif (lock = 1) then
               temp_state <= 1; -- PASS state
